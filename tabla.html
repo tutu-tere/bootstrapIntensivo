@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla</title>
+   <!-- Bootstrap css -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container py-4">
+    <!-- Para acceder al estilo de bootstrap hay que poner en table la class table -->
+    <table class="table table-info">
+      <!-- los colores se poenen en esta categoria llamada tablet y los colores se ponen Primary Secondary Success Danger Warning Info Light dark -->
+      <thead>
+  <!-- Se puede agregar un color diferente por fila -->
+            <tr class="table-danger">
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+            </tr>
+  
+      </thead>
+  
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Teresa Raquel</td>
+          <td>Olivares Rueda</td>
+          <td>Psicologa</td>
+        </tr>
+  
+        <tr>
+          <td>2</td>
+          <td>Pablo Patricio</td>
+          <td>Ponce Morales</td>
+          <td class="table-dark">Psicologo</td>
+        </tr>
+  
+        <tr>
+          <td>3</td>
+          <td>Marianela Teresa</td>
+          <td>Rueda Vildoso</td>
+          <td>Ingeniera</td>
+        </tr>
+  
+      </tbody>
+    </table>
+
+    <table class="table table-warning table-striped">
+      <!-- table-triped permite que fila por medio tenga una diferente tonalidad y para que se vea con un color determinado se pone antes table y el color deseado -->
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+            </tr>
+  
+      </thead>
+  
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Teresa Raquel</td>
+          <td>Olivares Rueda</td>
+          <td>Psicologa</td>
+        </tr>
+  <!-- La categoria active es para darle un enfasis a una fila o a una seccion de la tabla -->
+        <tr>
+          <td>2</td>
+          <td class="table-active">Pablo Patricio</td>
+          <td>Ponce Morales</td>
+          <td>Psicologo</td>
+        </tr>
+  
+        <tr>
+          <td>3</td>
+          <td>Marianela Teresa</td>
+          <td>Rueda Vildoso</td>
+          <td>Ingeniera</td>
+        </tr>
+  
+      </tbody>
+    </table>
+
+    <table class="table table-hover">
+     <!-- Para cuando queremos que en la tabla se marque la fila por donde estamos pasando el curso se pone la propiedad hover -->
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+            </tr>
+  
+      </thead>
+  
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Teresa Raquel</td>
+          <td>Olivares Rueda</td>
+          <td>Psicologa</td>
+        </tr>
+  
+        <tr>
+          <td>2</td>
+          <td>Pablo Patricio</td>
+          <td>Ponce Morales</td>
+          <td>Psicologo</td>
+        </tr>
+  
+        <tr>
+          <td>3</td>
+          <td>Marianela Teresa</td>
+          <td>Rueda Vildoso</td>
+          <td>Ingeniera</td>
+        </tr>
+  
+      </tbody>
+    </table>
+
+    <table class="table table-bordered">
+    <!--le agrega como los bordes de excel  -->
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+            </tr>
+  
+      </thead>
+  
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Teresa Raquel</td>
+          <td>Olivares Rueda</td>
+          <td>Psicologa</td>
+        </tr>
+  
+        <tr>
+          <td>2</td>
+          <td>Pablo Patricio</td>
+          <td>Ponce Morales</td>
+          <td>Psicologo</td>
+        </tr>
+  
+        <tr>
+          <td>3</td>
+          <td>Marianela Teresa</td>
+          <td>Rueda Vildoso</td>
+          <td>Ingeniera</td>
+        </tr>
+  
+      </tbody>
+    </table>
+   
+    <table class="table table-borderless">
+    <!-- Borra todos los bordes -->
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Profesión</th>
+            </tr>
+  
+      </thead>
+  
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Teresa Raquel</td>
+          <td>Olivares Rueda</td>
+          <td>Psicologa</td>
+        </tr>
+  
+        <tr>
+          <td>2</td>
+          <td>Pablo Patricio</td>
+          <td>Ponce Morales</td>
+          <td>Psicologo</td>
+        </tr>
+  
+        <tr>
+          <td>3</td>
+          <td>Marianela Teresa</td>
+          <td>Rueda Vildoso</td>
+          <td>Ingeniera</td>
+        </tr>
+  
+      </tbody>
+    </table>
+   
+    <div class="table-responsive">
+<!-- Tabla responsiva hace que cuando haya un tamaño de pantalla muy pequeño, aparezca una barra de navegacion horizontal para recorrer la tabla -->
+      <table class="table table-sm">
+        <!-- es para decir al pie de que se trata la tabla y si lo queremos arriba de la tabla tenemos que poner la en la clase table caption-top -->
+        <caption>Lista de usuarios</caption>
+        <!-- La propiedad sm le quita espacio entre las filas -->
+        <thead>
+          <tr class="table-dark">
+            <th>#</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Profesión</th>
+            <th>Descripción</th>
+            <th>Descripción 2</th>
+            <th>Descripción 3</th>
+          </tr>
+          
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Teresa Raquel</td>
+            <td>Olivares Rueda</td>
+            <td>Psicologa</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam similique non corrupti reprehenderit. Quia earum totam sunt fugiat voluptates iusto hic eum dicta, quaerat saepe quasi harum amet rerum.</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam similique non corrupti reprehenderit. Quia earum totam sunt fugiat voluptates iusto hic eum dicta, quaerat saepe quasi harum amet rerum.</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam similique non corrupti reprehenderit. Quia earum totam sunt fugiat voluptates iusto hic eum dicta, quaerat saepe quasi harum amet rerum.</td>
+          </tr>
+          
+          <tr>
+            <td>2</td>
+            <td>Pablo Patricio</td>
+            <td>Ponce Morales</td>
+            <td>Psicologo</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis, dolores, soluta tempore debitis ipsum, temporibus voluptatem atque tenetur quo dolorum! Nesciunt sunt corporis natus repellendus commodi inventore, blanditiis vitae.</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis, dolores, soluta tempore debitis ipsum, temporibus voluptatem atque tenetur quo dolorum! Nesciunt sunt corporis natus repellendus commodi inventore, blanditiis vitae.</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis, dolores, soluta tempore debitis ipsum, temporibus voluptatem atque tenetur quo dolorum! Nesciunt sunt corporis natus repellendus commodi inventore, blanditiis vitae.</td>
+          </tr>
+          
+          <tr>
+            <td>3</td>
+            <td>Marianela Teresa</td>
+            <td>Rueda Vildoso</td>
+            <td>Ingeniera</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat totam necessitatibus porro animi ad accusamus similique minima ipsum veniam laborum laudantium maxime et consectetur ipsam, ducimus natus eum possimus.</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat totam necessitatibus porro animi ad accusamus similique minima ipsum veniam laborum laudantium maxime et consectetur ipsam, ducimus natus eum possimus.</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fugiat totam necessitatibus porro animi ad accusamus similique minima ipsum veniam laborum laudantium maxime et consectetur ipsam, ducimus natus eum possimus.</td>
+          </tr>
+          
+        </tbody>
+        <tfoot>
+          <td>#</td>
+          <td>footer</td>
+          <td>footer</td>
+          <td>Aliquid eligendi assumenda adipisci consectetur earum mollitia porro quae harum quia temporibus quibusdam asperiores dolorem pariatur placeat explicabo, ad esse officiis, laboriosam eaque illo iure eum? Perferendis labore inventore quas?</td>
+          <td>Nobis nulla, dolorum accusantium cumque ratione perferendis sint! Doloremque magnam possimus nisi ipsum at recusandae accusantium neque debitis distinctio eligendi quas, ratione sed? Delectus praesentium hic dolorum! Nisi, fugiat quas?</td>
+          <td>Excepturi enim perspiciatis beatae inventore eos perferendis corrupti ratione aliquid modi. Dolores culpa corrupti, id et vel doloribus quia ipsam quibusdam unde odit expedita officiis. Vitae aperiam reiciendis magni quod!</td>
+          <td>Excepturi enim perspiciatis beatae inventore eos perferendis corrupti ratione aliquid modi. Dolores culpa corrupti, id et vel doloribus quia ipsam quibusdam unde odit expedita officiis. Vitae aperiam reiciendis magni quod!</td>
+        </tfoot>
+      </table>
+    </div>
+  
+  </div>
+  
+</body>
+</html>
