@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>listas</title>
+     <!-- Bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!-- la clase list-unstyled quita los puntos y los numeros, las listas anidadas no se ven afectadas por la clase -->
+  <div class="container">
+    <ul class="list-unstyled">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+      <ul> 
+        <li>subelemento 1</li>
+        <li>subelemento 2</li>
+        <li>subelemento 3</li>
+        <li>subelemento 4</li>
+        <li>subelemento 5</li>
+      </ul>
+    </ul>
+<!-- con estas clase list inline y luego list-inline-item la lista se ve horizontal -->
+    <ol class="list-inline">
+      <li class="list-inline-item">Elemento 1</li>
+      <li class="list-inline-item">Elemento 2</li>
+      <li class="list-inline-item">Elemento 3</li>
+      <li class="list-inline-item">Elemento 4</li>
+      <li class="list-inline-item">Elemento 5</li>
+    </ol>
+
+  </div>  
+</body>
+</html>
